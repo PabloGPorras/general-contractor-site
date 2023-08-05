@@ -1,0 +1,18 @@
+# Dependencies
+/node_modules/
+
+# Environment variables
+.env
+
+# Caches and runtime
+.cache/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Development tools
+/package-lock.json
+yarn.lock
+
+# Database SQLite (if you use it)
+*.sqlite

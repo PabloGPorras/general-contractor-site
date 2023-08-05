@@ -1,0 +1,18 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files (depends on what IDE you are using)
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Log files
+*.log
+
+# Temp files
+*.tmp
+*.temp
+
+# Others (add any other global patterns if needed)
