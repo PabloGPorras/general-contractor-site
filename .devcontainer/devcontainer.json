@@ -1,0 +1,25 @@
+{
+    "name": "My Codespace Environment",
+    "image": "ubuntu:latest",
+    "postCreateCommand": "docker-compose up -d",
+    "runArgs": ["--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined"],
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            },
+            "extensions": [
+                // Example: Install the Docker VS Code extension for a better Dockerfile and docker-compose.yml editing experience.
+                "ms-azuretools.vscode-docker"
+            ]
+        }
+    },
+    "forwardPorts": [
+        // If you need to access services via a specific port in the Codespace, specify those ports here.
+        // Example: If your client runs on port 3000 and your server on port 4000:
+        3000,
+        4000
+    ],
+    "remoteUser": "root",
+    "shutdownAction": "stopContainer"
+}
